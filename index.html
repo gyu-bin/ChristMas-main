@@ -16,7 +16,7 @@
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="assets/css/styles.css">
 
-        <title>Responsive Christmas Website - Bedimcode</title>
+        <title>Responsive Christmas Website</title>
     </head>
     <body>
 
@@ -24,6 +24,7 @@
 
         <header class="header" id="header">
             <audio src="mp3/christmas.mp3" autoplay controls loop id="myAudio">오디오 지원되지 않는 브라우저</audio>
+
             <nav class="nav container">
                 <a href="#" class="nav__logo">
                     <img src="assets/img/logo.png" alt="" class="nav__logo-img"> 
@@ -327,4 +328,13 @@
         <!--=============== MAIN JS ===============-->
         <script src="assets/js/main.js"></script>
     </body>
+    <script src='https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js'></script>
+    <script>
+        const sf = new Snowflakes({
+            color: "#ffffff", // 색상
+            count: 100, // 갯수
+            minOpacity: 0.8, // 최소 투명도 0: 투명 | 1: 불투명
+            maxOpacity: 0.9 // 최대 투명도
+        });
+    </script>
 </html>
